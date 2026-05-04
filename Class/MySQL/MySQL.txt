@@ -1,0 +1,44 @@
+SQL - Structured Query language
+- It used to communicate with relational database
+- Popular databse - MYSql, MySQL server, PostgreSQL
+- Company use - E-commerce, banking, applications
+
+Activities  --> Important command 
+- create table
+CREATE TABLE student (id INT PRIMARY KEY, name VARCHAR, course VARCHAR);
+
+- insert data
+INSERT INTO student VALUES ("siddhi", "AIML");
+
+- select 
+SELECT * FROM student;
+
+- update 
+UPDATE student SET course = "AIDS" WHERE id = 1;
+
+- delete
+DELETE FROM student WHERE id = 1;
+
+
+**Connecting mysql to node.js**
+- EXP 12
+
+What is ORM 
+- Object relational mapping 
+- instead of writing sql quries we use js objects 
+- without ORM - SELECT * FROM student;
+- with ORM - student.findAll();
+
+**WebSocket**
+- Client and server are always connected 
+- WebSocket allows us real time communication 
+- HTTP --> request and response 
+- WebSocket --> Continuos connection
+- Real time example --> Chat Apps like Whatsapp, telegram, live stock price updates, Online gaming, Notification, 
+- if we want to install WebSocket in our project 
+    command --> npm install WebSocket
+
+Activities for WebSocket 
+1. Deep study websocket , understand concept with example 
+
+

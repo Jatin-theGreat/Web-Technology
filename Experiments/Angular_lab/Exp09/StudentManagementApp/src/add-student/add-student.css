@@ -1,0 +1,48 @@
+/* Center the form */
+.form-container {
+  height: calc(100vh - 60px); /* adjust for navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b47fd9;
+}
+
+/* Card box */
+.form-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Inputs */
+.form-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Button */
+.form-card button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Button hover */
+.form-card button:hover {
+  background-color: #555;
+}
+
+.form-card input:focus {
+  outline: none;
+  border-color: #333;
+}

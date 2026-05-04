@@ -1,0 +1,86 @@
+Activity 1 - Difference between Angular and React ?
+Ans - 
+Angular - A Complete frontend framework develeoped by google used to build full-featured web applications
+        - Follows MVC architecture 
+        - uses typeScript 
+        - Slightly slower due to real DOM and heavy framework.
+
+React - A JavaScript library developed by Meta mainly used for building UI components.
+      - Follows component-based architecture.
+      - Uses JavaScript (ES6+) with JSX.
+      - Faster due to virtual DOM and optimized rendering.
+
+Angular is a full-fledged framework suitable for large, structured applications,
+whereas React is a lightweight library ideal for building fast and flexible user interfaces.
+
+Activity 2 - Which one is more popular Angular or React ?
+Ans - 
+- React is more popular than Angular in the industry. 
+- This is mainly because React is lightweight, flexible, and easier to learn, which makes it widely adopted by startups as well as large companies.
+- Angular is still very relevant, especially in enterprise-level applications, where a structured and complete framework is preferred.
+- So overall, React leads in popularity, while Angular remains strong in large-scale enterprise projects.
+
+Activity 3 - Why React library is created ?
+Ans - 
+- React was created by Meta to solve a major performance issue in Facebook’s News Feed and messaging system.
+- Facebook had a problem where message counts, notifications, and UI elements were updating very frequently and dynamically. 
+- Every small change required the entire DOM to be updated, which made the application slow and inefficient.
+- To solve this, React introduced the Virtual DOM, where instead of updating the whole page, only the changed parts (like message count/notification badge) are updated efficiently.
+
+Activity 4 - <></> - What is this called and why we use if ?
+Ans - 
+- <></> is called React Fragment
+- It is used to group multiple elements together without adding an extra node to the DOM.
+- In React, a component must return only one parent element. 
+- Earlier, developers used a <div> to wrap multiple elements, but that created unnecessary extra DOM nodes.
+- React Fragments solve this problem by:
+    Avoiding extra wrapper elements in the DOM
+    Keeping the HTML structure clean
+    Improving performance slightly by reducing unnecessary nodes
+
+Activity 5 -  What are the component and types of components, where we use componenets in react with 2 examples
+Ans - 
+- A component in React is a reusable, independent building block of the UI. 
+- It represents a part of the user interface like a button, header, form, or entire page section. 
+- React applications are built by combining multiple components.
+
+Types of component in React 
+1. Functional component 
+ - Simple JavaScript functions that return JSX
+ - Modern and most widely used
+ - Support Hooks like useState, useEffect
+
+2. Class component 
+ - ES6 classes that extend React.Component
+ - Use render() method
+ - Older approach (less used now)
+
+Where we use components 
+- We use components to build every part of a React application, such as:
+        Navigation bar
+        Buttons
+        Forms
+        Pages (Home, About, Dashboard)
+        Cards, lists, dashboards, etc.
+
+Examples of compoent 
+1. Welcome component 
+2. LiveSearch
+
+
+Activity 6 - What is props , why we use props and types of props with 2 examples
+Ans - Props (short for properties) are used to pass data from a parent component to a child component in React. They make components reusable and dynamic.
+We use props to:
+    Pass data between components
+    Make components reusable
+    Make UI dynamic instead of static
+    Follow one-way data flow (top to bottom)
+
+Types of Props
+1. Simple Props- Passing single values like string, number, boolean
+2. Multiple Props (Object-like props) - Passing multiple values together (like name, age, etc.)
+3. Children Props - Passing components or JSX inside another component
+
+Example of props
+1. passing object as props - Product.jsx
+2. passing function as props - Button.jsx

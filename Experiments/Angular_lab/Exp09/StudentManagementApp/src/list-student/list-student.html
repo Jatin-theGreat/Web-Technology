@@ -1,0 +1,57 @@
+<!-- <p>list-student works!</p> -->
+<div class="table-container">
+    <div class="table-card">
+        <h2>Student List</h2>
+        
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Course</th>
+                <th>Actions</th>
+            </tr>
+
+            @for(s of students; track $index; let i = $index){
+                <tr>
+                    @if(editIndex !== i){
+                        <td>{{s.name}}</td>
+                    }@else{
+                        <td>
+                            <input [(ngModel)]="updatedStudent.name">
+                        </td>
+                    }
+
+                    @if(editIndex !== i){
+                        <td>{{s.age}}</td>
+                    }@else{
+                        <td>
+                            <input [(ngModel)]="updatedStudent.age">
+                        </td>
+                    }
+
+                    @if(editIndex !== i){
+                        <td>{{s.course}}</td>
+                    }@else{
+                        <td>
+                            <input [(ngModel)]="updatedStudent.course">
+                        </td>
+                    }
+
+                    <td>
+                        <button class="delete-btn" (click)="deleteStudent(i)">Delete</button>
+
+                        @if(editIndex !== i){
+                            <button class="edit-btn" (click)="editStudent(i)">Edit</button>
+                        }@else{
+                            <button class="save-btn" (click)="updateStudent()">Save</button>
+                        }
+                    </td>
+                </tr>
+            }
+        
+        </table>
+
+    </div>
+</div>
+
+

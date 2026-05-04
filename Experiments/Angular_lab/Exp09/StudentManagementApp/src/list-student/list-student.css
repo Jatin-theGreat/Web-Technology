@@ -1,0 +1,75 @@
+/* Center container */
+.table-container {
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b47fd9;
+}
+
+/* Card box */
+.table-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 700px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+/* Header */
+th {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+/* Cells */
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Inputs */
+td input {
+  width: 90%;
+  padding: 5px;
+}
+
+/* Buttons */
+button {
+  margin: 3px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Specific buttons */
+.delete-btn {
+  background-color: red;
+}
+
+.edit-btn {
+  background-color: black;
+}
+
+.save-btn {
+  background-color: green;
+}
+
+.cancel-btn {
+  background-color: gray;
+}
+
+/* Hover effects */
+button:hover {
+  opacity: 0.8;
+}

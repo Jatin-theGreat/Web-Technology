@@ -1,0 +1,97 @@
+React is javaScript library developed by meta to build fast and interactive User interface.
+It is a single page application(SPA) page does not reload only content change.
+Example - Instagram , Facebook
+
+
+Why do we use react ?
+Answer ->
+Problem with traditional js - fully page reload, complex dom manipulation, hard to manage large applications.
+by using react - updates only required parts, use reusable components
+
+we write everything html, css, js in only one file do not need to write different files
+
+Core concept 
+virtual DOM --> 
+- React creates a copy of real DOM means virtual DOM
+- When data changes react updates virtual DOM, updates only changed part in real DOM
+- used for high performance
+
+How can we create project in React 
+1. open folder
+2. terminal - new terminal
+3. command - node -v (check version)
+4. command - npm -v (check version)
+5. command - for creating react application --> npm create vite@latest app_name
+ // npx create react app appName - old 
+
+##
+vite --> fast build tool 
+npm install -->  install dependancy 
+npm run dev ---> start server
+
+**jsx**
+jsx --> jsx means javScript + xml , it allows us to write html code inside the JavaScript
+#Syntax --> Example -
+const element = <h1> Hello React </h1>
+
+**Rules for jsx**
+- must return single parent 
+- use {} scope brackets for javaScript
+
+**Files**
+index.html - render everything in this file (main file)
+main.jsx - It is entry point of react application
+App - root function/component
+
+**Component**
+Component is a heart of react 
+1. Functional Component - 
+    Example - 
+    function student(){
+        return <h1>This is functional component </h1>
+    }
+
+**How to use component **
+    function App(){
+        return <>
+                <student/>
+                </>
+    }
+
+
+
+**Props**
+- props means data passing from parent to child 
+    //props -- parent
+    function App(){
+        return <student name = 'Siddhi'/>
+    }
+
+    //child 
+    function student(props){
+        return <h2>Name : {props.name} </h2>
+    }
+
+
+Activity 
+1. What is difference between angular and react ?
+2. Which one is more popular ?
+3. Why react library is created ?
+4. <></> -- why used and what is this called ?
+5. What component and types of components, where we use componenets in react with 2 examples 
+6. What is props , why we use props and types of props with 2 examples
+
+
+**State (22 April)**
+state - data that can change , value that changes over time.
+When state changes --> screen updates automatically
+
+**Why we use state**
+Without state - value will not update on screen
+with state -  value updated on UI automatically
+
+**Difference betwen props and state**
+props - passed from parent, Read only, used for communication
+state - 
+
+**React routing** 23 april

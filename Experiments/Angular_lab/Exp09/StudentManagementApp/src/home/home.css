@@ -1,0 +1,32 @@
+/* Center container */
+.home-container {
+  height: calc(100vh - 60px); /* adjust for navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b47fd9;
+}
+
+/* Card box */
+.home-card {
+  background-color: white;
+  padding: 60px;
+  border-radius: 12px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  text-align: center;
+  width: 500px;
+}
+
+/* Heading */
+.home-card h2 {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+/* Paragraph */
+.home-card p {
+  color: rgb(164, 31, 225);
+  font-size: 16px;
+}
